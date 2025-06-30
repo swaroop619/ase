@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo 'Running unit tests'
                 // Use 'python' or 'python3' depending on your environment
-                bat 'python -m unittest testcase.py'
+                powershell 'python -m unittest testcase.py'
             }
         }
     }
