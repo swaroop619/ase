@@ -16,7 +16,7 @@ pipeline {
             steps {
                 echo 'Running unit tests'
                 // Use 'python' or 'python3' depending on your environment
-                powershell 'C:\Users\ADMIN\AppData\Local\Programs\Python\Python310\python.exe -m unittest testcase.py'
+                sh 'python3 -m unittest testcase.py'
             }
         }
     }
